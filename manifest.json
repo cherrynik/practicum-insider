@@ -1,13 +1,14 @@
 // MUCH IMPORTANT:
 // https://developer.chrome.com/docs/extensions/mv3/a11y/
 {
-  "name": "Practicum Insider",
-  "description": "No description",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
   "version": "0.0.1",
   "manifest_version": 3,
   "default_locale": "en",
 
   "action": {
+    "default_title": "__MSG_appName__",
     "default_popup": "index.html",
     "default_icon": {
       "16": "./images/icons/16.png",

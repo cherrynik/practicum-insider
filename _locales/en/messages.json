@@ -1,5 +1,8 @@
 {
-  "hello": {
-    "message": "Hello World!"
+  "appName": {
+    "message": "Practicum Insider"
+  },
+  "appDesc": {
+    "message": "Description."
   }
 }
