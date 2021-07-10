@@ -1,0 +1,10 @@
+
+
+.PracticumInsider {
+  @include MakeRect($WINDOW_WIDTH, $WINDOW_HEIGHT);
+  // background-color: black;
+}
+
+.app {
+  $value-map: ();
+}
