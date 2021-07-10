@@ -1,0 +1,38 @@
+:root {
+    --app-width: 250px;
+    --app-height: 400px;
+    --logo-size: 28px;
+}
+
+.PracticumInsider {
+    width: var(--app-width);
+    height: var(--app-height);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    height: 48px;
+    width: 100%;
+}
+    .header__logo {
+        width: var(--logo-size);
+        height: var(--logo-size);
+    }
+
+    .header__name {
+        font-size: 16px;
+    }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #b3edff;
+    font-weight: bold;
+}

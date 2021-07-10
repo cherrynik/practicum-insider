@@ -1,0 +1,41 @@
+// MUCH IMPORTANT:
+// https://developer.chrome.com/docs/extensions/mv3/a11y/
+{
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "default_locale": "en",
+
+  "action": {
+    "default_title": "__MSG_appName__",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "./images/icons/16.png",
+      "32": "./images/icons/32.png",
+      "48": "./images/icons/48.png",
+      "128": "./images/icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "./images/icons/16.png",
+    "32": "./images/icons/32.png",
+    "48": "./images/icons/48.png",
+    "128": "./images/icons/128.png"
+  },
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "options_page": "options.html",
+  "host_permissions": [
+    "*://*.praktikum.yandex.ru/*",
+    "*://*.practicum.yandex.com/*"
+  ],
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ]
+}
