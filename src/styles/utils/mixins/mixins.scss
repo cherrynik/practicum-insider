@@ -1,0 +1,7 @@
+@mixin MakeRect($width, $height: $width, $color: null) {
+  width: $width;
+  height: $height;
+  @if ($color != null) {
+    background-color: $color;
+  }
+}
