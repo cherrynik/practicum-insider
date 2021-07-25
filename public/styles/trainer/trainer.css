@@ -1,0 +1,220 @@
+/* Trainer */
+:root {
+  --primary-color: #1a1b22;
+  --secondary-color: #333333;
+  --accenting-color: #fff;
+  --control-bg-light: #404040;
+  --active-control-bg-light: #595959;
+  --text-color: #fff;
+  --text-color-inverted: #000;
+  --code-numbers-color: #595959;
+  --white: #fff;
+  --disabled-color: #3c3c3c;
+  --disabled-text: #6f6f6f;
+}
+/*   --dark-theme-accent-color: #fff; */
+
+/* General panels */
+#bundle-trainer .trainer-navigation__content,
+#bundle-trainer .trainer-course-navigation,
+#bundle-trainer .theory-panel__theory-viewer,
+#bundle-trainer .theory-panel__content,
+#bundle-trainer .trainer__lesson_type_logs .trainer__title {
+	background-color: var(--primary-color) !important;
+}
+
+
+.scrollbar-default .scrollbar__control-line {
+	background: var(--control-bg-light) !important;
+}
+
+/* Icons */
+.icon-list,
+.icon-close,
+.icon-theory,
+.icon-download,
+.icon-close-small,
+.icon-helpoutline,
+.icon-refresh,
+.icon-arrow {
+  color: var(--white) !important;
+}
+
+.icon-file-type {
+	color: var(--primary-color) !important;
+}
+
+.icon-tick {
+	color: var(--profession-color) !important;
+}
+
+.icon-lock {
+	color: var(--disabled-text) !important;
+}
+
+/* Left nav-panel */
+#bundle-trainer .trainer-navigation__content,
+#bundle-trainer .trainer-course-navigation {
+	border-right: 1px solid var(--secondary-color) !important;
+}
+	
+	/* Top "Go Back" */
+	#bundle-trainer .trainer-navigation__top {
+		background: var(--white) !important;
+	}
+  	#bundle-trainer .trainer-navigation__top:hover {
+    	background: var(--profession-color) !important;
+  	}
+
+	#bundle-trainer .trainer-navigation__top-button {
+		color: var(--primary-color) !important;
+	}
+
+/* Right panel */
+#bundle-trainer .theory-panel__content {
+	border-left: 1px solid var(--secondary-color) !important;
+}
+
+
+/* Top panel */
+/* Terminal */
+#bundle-trainer .trainer__panel_at_top {
+	border-bottom: 1px solid var(--control-bg-light) !important;
+  border-left: 1px solid var(--control-bg-light) !important;
+}
+
+/* Tabs */
+#bundle-trainer .trainer-editor__tabs {
+	background: var(--secondary-color) !important;
+}
+
+.tab-pane.tab_active,
+.tabs-group-pane.tabs-group {
+  background: var(--secondary-color) !important;
+  color: var(--white) !important;
+}
+
+.tab-pane.tab_active {
+  box-shadow: 0 0 15px 2px var(--secondary-color) !important;
+}
+
+.tab-pane.tab_active:hover {
+	box-shadow: 0 0 15px 2px var(--profession-color) !important;
+}
+
+/* Bottom panel */
+.notification {
+	background: var(--primary-color) !important;
+}
+
+#bundle-trainer .trainer__panel_at_bottom {
+	border-top: 1px solid var(--secondary-color) !important;
+}
+
+#bundle-trainer .trainer-tasks {
+	background: var(--primary-color) !important;
+}
+
+#bundle-trainer .trainer-footer {
+	background: var(--primary-color) !important;
+}
+
+#bundle-trainer .trainer-footer__action-button {
+	border-left: 1px solid var(--control-bg-light) !important;
+}
+
+.button2_type_primary {
+  background-color: var(--accenting-color) !important;
+}
+
+.button2:disabled {
+  background-color: var(--disabled-color) !important;
+}
+
+.button2:disabled span {
+  color: var(--disabled-text) !important;
+}
+
+.button2_type_primary span {
+  color: var(--text-color-inverted) !important;
+}
+
+.button2_type_primary:hover {
+  background-color: var(--accent-color) !important;
+}
+
+.button2_type_primary:hover span {
+  color: var(--text-color) !important;
+}
+
+.button2_type_link:active {
+	background-color: var(--secondary-color) !important;
+} 
+
+/* Horizontal splitter */
+ .split-view__pane > .split-view__resizer:before {
+	background-color: var(--control-bg-light) !important;
+}
+
+/* IDE */
+/* Files tree */
+#bundle-trainer .trainer {
+  background: var(--secondary-color) !important;
+}
+
+#bundle-trainer .files-tree {
+  border-right: 1px solid var(--control-bg-light) !important;
+  color: var(--white) !important;
+}
+
+/* Lines column */
+.CodeMirror-gutters,
+.CodeMirror-gutter {
+  border-right: 1px solid var(--secondary-color) !important;
+  background: var(--secondary-color) !important;
+}
+
+/* Window */
+.CodeMirror-code,
+.CodeMirror {
+  background: var(--secondary-color) !important;
+}
+
+#bundle-trainer .trainer-editor .CodeMirror-linenumber {
+	color: var(--code-numbers-color) !important;
+}
+
+/* General */
+/* Text */
+:root {
+	--code-color: #fff;
+	--code-background: #333;
+	--code-outline: #5a5b5d;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span, li,
+.paragraph {
+	color: var(--text-color) !important;
+}
+
+.markdown_type_theory a {
+	color: var(--profession-color) !important;
+}
+
+.code-inline {
+  color: var(--code-color) !important;
+  background: var(--code-background) !important;
+  box-shadow: inset 0 0 0 1px var(--code-outline) !important;
+}
+
+.code-block {
+	background: var(--secondary-color) !important;
+  color: var(--text-color) !important; /* NOT OK */
+  border-color: var(--code-outline) !important
+}
+
+html, body,
+#bundle-index__loading, #mount__loading, .app__loading, .page__loading {
+	background: #212121 !important;
+}
