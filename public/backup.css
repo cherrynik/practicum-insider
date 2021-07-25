@@ -1,0 +1,211 @@
+
+
+/*
+.code-block .code-block__clipboard,
+.code-block .code-block__lang {
+	color: var(--disabled-text);
+}
+
+.code-block .code-block__clipboard {
+	text-decoration: underline;
+}
+
+.code-block .code-block__clipboard:hover {
+	color: var(--profession-color)
+} */
+
+
+/* Buttons */
+/* #bundle-trainer .theory-panel__theory-close-button {
+	background-color: var(--secondary-color)
+}
+#bundle-trainer .theory-panel__theory-close-button:hover {
+	background-color: var(--profession-color)
+}
+
+/* Course Navigation */
+/* .course-navigation__tabs .course-navigation__tabs-header {
+	border-color: var(--secondary-color);
+}
+
+[class^="course-navigation"] {
+	color: var(--text-color)
+}
+
+.course-navigation__title_colored span {
+	color: var(--profession-color)
+}
+
+.course-navigation-topic__header-info-item_active span {
+	color: var(--profession-color);
+} */
+
+/* Code C++ */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+	--keyword-color: #f15252;
+	--operator-color: #72a0da;
+  --variable-color: #fff;
+  --meta-color: #ff8640;
+  --comment-color: #77787b;
+  --definition-color: #ffaace;
+  --type-color: #ffcb7c;
+  --atom-color: #00d0ff;
+  --string-color: #d69647;
+  
+  --matching-pair-primary-color: #87f199;
+  --matching-pair-secondary-color: #ff9715;
+} */
+
+/* cm - CodeMirror */
+/* [class^="cm-"] {
+	font-family: 'JetBrains Mono', monospace;
+  font-weight: bold; */
+/*   line-height: 21px;
+  font-size: 15px; */
+/*}*/
+
+/* .CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+	color: var(--matching-pair-primary-color) !important;
+  background-color: var(--matching-pair-secondary-color) !important;
+}
+
+.cm-meta {
+  color: var(--meta-color) !important;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.cm-variable {
+  color: var(--variable-color) !important;
+  font-weight: normal;
+}
+
+.cm-keyword {
+  color: var(--keyword-color) !important;
+  font-style: italic;
+}
+
+.cm-operator {
+  color: var(--operator-color) !important;
+  font-weight: normal;
+}
+
+.cm-comment {
+	color: var(--comment-color) !important;
+}
+
+.cm-def {
+  color: var(--definition-color) !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cm-string {
+  color: var(--string-color) !important;
+	font-weight: normal;
+}
+
+.cm-type {
+	color: var(--type-color) !important;
+}
+
+.cm-atom {
+	color: var(--atom-color) !important;
+  font-weight: bolder;
+} */
+
+
+/* Code HTML */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --meta-color: #fff;
+  --tag-color: #ff7979;
+  --bracket-color: #b9b9b9;
+  --string-color: #f3d74c;
+  --attribute-color: #f3927c;
+} */
+
+/* cm - CodeMirror */
+/* [class^="cm-"] {
+	font-family: 'JetBrains Mono', monospace;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.cm-meta {
+  color: var(--meta-color) !important;
+  font-style: italic;
+}
+
+.cm-tag {
+  color: var(--tag-color) !important;
+	font-weight: normal;
+}
+
+.cm-bracket {
+	color: var(--bracket-color) !important;
+  font-weight: normal;
+}
+
+.cm-attribute {
+	color: var(--attribute-color) !important;
+	font-weight: normal;
+}
+
+.cm-string {
+	color: var(--string-color) !important;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+
+} */
+
+/* Code CSS */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+/* 
+:root {
+  --qualifier-color: #fff;
+  --builtin-color: #fff;
+  --property-color: #ff7979;
+  --variable-color: #b9b9b9;
+  --string-color: #f3d74c;
+  --number-color: #f3927c;
+} */
+/*--atom-color: ;*/
+/*--callee-color: ;*/
+
+/* cm - CodeMirror */
+/* [class^="cm-"] {
+	font-family: 'JetBrains Mono', monospace;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.cm-qualifier {
+  color: var(--meta-color);
+  font-style: italic;
+}
+
+.cm-builtin {}
+
+.cm-property {}
+
+.cm-variable {}
+
+.cm-string {}
+
+.cm-number {}
+
+.cm-atom {}
+
+.cm-callee {}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+
+} */

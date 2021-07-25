@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -20,9 +21,53 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .PracticumInsider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, #00ffb5, #00b7ff)
+      }
+
+      .PracticumInsider__toggler {
+        padding: 30px;
+        background: rgb(0, 149, 255);
+        border: none;
+        font-weight: bold;
+        box-shadow: 0 5px 0px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 7.5px;
+        color: white;
+        transition: .1s all ease
+      }
+
+      .PracticumInsider__toggler:hover {
+        /* padding: 27px;
+        font-size: .9em; */
+        background: rgb(37, 38, 39);
+      }
+
+      .PracticumInsider__toggler:active {
+        margin-top: calc(100% + 10px);
+        margin-bottom: 100%;
+        opacity: .8;
+        box-shadow: 0 0 0 0;
+      }
+    </style>
   </head>
   <body class="PracticumInsider" id="PracticumInsider">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <button class="PracticumInsider__toggler">🌞</button>
+
+    <!-- <form>
+      <label>
+        <input type="radio" name="theme" id="" value="Dark" checked="checked"> Dark Theme
+      </label>
+      <label>
+        <input type="radio" name="theme" id="" value="Light"> Light Theme
+      </label>
+    </form> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -33,5 +78,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="./index.js"></script>
   </body>
 </html>
