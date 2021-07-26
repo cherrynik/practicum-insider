@@ -218,3 +218,11 @@ html, body,
 #bundle-index__loading, #mount__loading, .app__loading, .page__loading {
 	background: #212121 !important;
 }
+
+#bundle-trainer .trainer__lesson_type_theory {
+	background: #1a1b22 !important;
+}
+
+.tooltip-landing__content {
+	background: #727272 !important;
+}
