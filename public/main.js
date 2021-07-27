@@ -72,6 +72,7 @@ class PracticumInsider {
   }
 
   #LoadTabs = () => {
+    console.log("when asked, went to switchin tabs")
     this.#TABS.query({
       active: true,
       url: [
@@ -96,10 +97,12 @@ class PracticumInsider {
   }
 
   #SwitchTheme = async () => {
+    console.clear()
     this.#CODE_STATUS.Complete = false || 0;
     this.#DarkTheme.State = !this.#DarkTheme.State;
-    this.#SaveState({ [this.#PROP.Theme]: this.#DarkTheme.State });
+    await this.#SaveState({ [this.#PROP.Theme]: this.#DarkTheme.State });
     await this.#LoadTabs();
+    this.#CODE_STATUS.Complete = true || 1;
     return true;
   }
 
@@ -116,7 +119,6 @@ class PracticumInsider {
       } else if (message === this.#COMMAND.SwitchTheme) {
         if (this.#SwitchTheme()) {
           reply({ feedback: this.#CODE_STATUS.Success })
-          this.#CODE_STATUS.Complete = true || 1;
         }
       }
     });

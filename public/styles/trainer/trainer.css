@@ -226,3 +226,12 @@ html, body,
 .tooltip-landing__content {
 	background: #727272 !important;
 }
+
+.skills-modal__content {
+	background: #1a1b22 !important;
+}
+
+
+* {
+  transition: 0s all ease !important
+}

@@ -1,4 +1,13 @@
 /* Test */
 #bundle-proficiency .proficiency-page__content {
-  background-color: #f00 !important;
+  background-color: #1a1b22 !important;
+  color: white !important
+}
+
+#bundle-proficiency .proficiency-page__main {
+  background-color: #1a1b22 !important;
+}
+
+.quiz.quiz_type_select .quiz__option-label {
+  color: white !important  
 }

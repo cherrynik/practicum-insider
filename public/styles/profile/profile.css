@@ -1,4 +1,38 @@
 /* Test */
 #bundle-profile .profile-page__content-wrapper {
-  background-color: #000000 !important;
+  background-color: #1a1b22 !important;
+}
+
+span {
+  color: white
+}
+
+#bundle-profile .current-lesson__description {
+  background: #3e3e3e !important
+}
+
+#bundle-profile .card {
+  background: #3e3e3e !important  
+}
+
+#bundle-profile .course-card__title {
+  color: white
+}
+
+#bundle-profile .course-card__image svg rect {
+/*   fill: transparent; */
+/*   color: black */
+}
+
+#bundle-profile .course-card__image svg > rect:nth-child(1) {
+  fill: transparent
+}
+
+.skills-modal__content {
+  background-color: #1a1b22 !important
+}
+
+.course-navigation,
+.course-navigation-item__title {
+  color: white !important
 }

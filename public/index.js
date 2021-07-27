@@ -15,16 +15,11 @@ const SyncButtonText = () => {
 window.onload = () => SyncButtonText();
 
 const SyncByData = (data) => {
-  RUNTIME.sendMessage(data.COMMAND.SwitchTheme, (reply) => {
-    reply.feedback === data.CODE_STATUS.Success ? SyncButtonText() : false
-  })
+  RUNTIME.sendMessage(data.COMMAND.SwitchTheme, (reply) => reply.feedback === data.CODE_STATUS.Success ? SyncButtonText() : false);
 }
 
 const SwitchTheme = () => {
-  new Promise((resolve, reject) => {
-    RUNTIME.sendMessage(null, (PracticumInsider) =>
-      PracticumInsider.CODE_STATUS.Complete ? resolve(PracticumInsider) : reject()
-  )}).then((data) => SyncByData(data))
+    RUNTIME.sendMessage(null, (PracticumInsider) => PracticumInsider.CODE_STATUS.Complete ? SyncByData(PracticumInsider) : false);
 }
 
 BUTTON.onclick = () => SwitchTheme();
