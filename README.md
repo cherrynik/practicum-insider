@@ -1,3 +1,9 @@
+# Кстати...
+..., так вот, прежде, чем начать читать документацию, ознакомься, пожалуйста, со следующим списком ссылок:
+- [Страница ведения блога о расширении](https://www.notion.so/praktikum/Practicum-Insider-002958753155467d965f3ef65d647cb1)
+- [Доска задач/Roadmap](https://www.notion.so/praktikum/748f7a3f9d3148538f7935ca2b16a8d9?v=137c4e4959a948f6b1165f5f3df36225)
+- [История изменений](https://www.notion.so/praktikum/7c1206ff201d438499d0613c42d0c943)
+
 # Документация к коду
 Расширение построено на основе [Chrome Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/)
 
