@@ -1,6 +1,6 @@
 // TODO: All the app built by "bricks", "components" with TS/TSX
 // FIXME: After some time, the extension goes in sleeping mode
-//        and it's the reason why its constructor's called again, and
+//        and it's the reason why its constructor's called again when it awakes, and
 //        even chrome.runtime.OnInstall's called at that time. (And this.#DarkTheme.State inits with its default value again)
 //        It's the cause, why after a long inactivity time, we need to double tap to switch
 //        only from the dark theme to light.
