@@ -1,8 +1,9 @@
-// FIXME: Sometimes theme doesn't switch
-//        When windows deattached (more than one active window)
-//        Or tab switched
-//        Switcher can also freeze its state
-//        Or apply state for other tabs and for itself only after switching between tabs
+// TODO: All the app built by "bricks", "components" with TS/TSX
+// FIXME: After some time, the extension goes in sleeping mode
+//        and it's the reason why its constructor's called again, and
+//        even chrome.runtime.OnInstall's called at that time. (And this.#DarkTheme.State inits with its default value again)
+//        It's the cause, why after a long inactivity time, we need to double tap to switch
+//        only from the dark theme to light.
 class PracticumInsider {
   #LOCAL_STORAGE = chrome.storage.local;
   #RUNTIME       = chrome.runtime;
@@ -72,11 +73,11 @@ class PracticumInsider {
   }
 
   #LoadTabs = () => {
-    console.log("when asked, went to switchin tabs")
     this.#TABS.query({
       active: true,
-      url: [
+      url: [ // TODO: Test RegExp
         "https://*.praktikum.yandex.ru/*",
+        "https://*.practicum.yandex.ru/*",
         "https://*.practicum.yandex.com/*"]}, (activeTabs) => {
         if (this.#RUNTIME.lastError || !activeTabs) {
           setTimeout(() => this.#LoadTabs(), 50);
