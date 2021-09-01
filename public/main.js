@@ -98,12 +98,8 @@ class PracticumInsider {
   }
 
   #SwitchTheme = async () => {
-    console.clear()
-    this.#CODE_STATUS.Complete = false || 0;
-    this.#DarkTheme.State = !this.#DarkTheme.State;
-    await this.#SaveState({ [this.#PROP.Theme]: this.#DarkTheme.State });
+    await this.#SaveState({ [this.#PROP.Theme]: !this.#DarkTheme.State })
     await this.#LoadTabs();
-    this.#CODE_STATUS.Complete = true || 1;
     return true;
   }
 
@@ -148,10 +144,33 @@ class PracticumInsider {
     for (const Service of services) Service();
   }
 
-  #SaveState = (localStorage) => this.#LOCAL_STORAGE.set(localStorage);
+  #SaveState = (data) => {
+    this.#LOCAL_STORAGE.get(this.#PROP.Theme, (localStorage) => {
+      if (JSON.stringify(data) === JSON.stringify(localStorage)) {
+        this.#DarkTheme.State = !data[this.#PROP.Theme];
+        this.#LOCAL_STORAGE.set({ [this.#PROP.Theme]: this.#DarkTheme.State });
+        return;
+      }
+    })
 
-  #Initialize = (localStorage) => {
-    this.#RUNTIME.onInstalled.addListener(() => this.#SaveState(localStorage));
+    this.#LOCAL_STORAGE.set(data);
+
+    this.#DarkTheme.State = data[this.#PROP.Theme];
+  }
+
+  #SaveFirstState = (data) => {
+    this.#LOCAL_STORAGE.get(this.#PROP.Theme, (localStorage) => {
+      console.log("Init")
+      if (Object.keys(localStorage).length === 0) {
+        this.#LOCAL_STORAGE.set(data);
+
+        this.#DarkTheme.State = data[this.#PROP.Theme]
+      }
+    })
+  }
+
+  #Initialize = (data) => {
+    this.#RUNTIME.onInstalled.addListener(() => this.#SaveFirstState(data));
   }
 
   constructor(state = this.#DarkTheme.State,
